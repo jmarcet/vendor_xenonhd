@@ -3,18 +3,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JDQ39E BUILD_VERSION_TAGS=relea
 
 # Rom Manager properties
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.modversion=XenonHD-$(shell date +"%m-%d-%y") \
-    ro.rommanager.developerid=TeamHorizon
-    
+    ro.modversion=ProjectBOX-$(shell date +"%Y.%m.%d") \
+    ro.rommanager.developerid=jmarcet
+
 # ROM Statistics and ROM Identification
 PRODUCT_PROPERTY_OVERRIDES += \
-ro.romstats.url=http://iceandfire.co/stats/ \
-ro.romstats.name=XenonHD \
-ro.romstats.version=$(shell date +"%m-%d-%y") \
+ro.romstats.name=ProjectBOX \
+ro.romstats.version=$(shell date +"%Y.%m.%d") \
 ro.romstats.tframe=2
-
-#OTA updater app
-PRODUCT_PROPERTY_OVERRIDES += \
-otaupdater.otaid=XenonHD_ROM \
-otaupdater.otaversion=$(shell date +"%Y%m%d") \
-otaupdater.otatime=$(shell date +"%Y%m%d-%H%M") \
